@@ -1,0 +1,48 @@
+name: Sync locality infrastructure
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: postcodelive-sync
+  cancel-in-progress: false
+jobs:
+  lewes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {path: postcodelive}
+      - uses: actions/checkout@v4
+        with:
+          repository: sccnexusdata/LocalEventsEngine
+          path: LocalEventsEngine
+      - uses: actions/checkout@v4
+        with:
+          repository: sccnexusdata/LocalDirectory
+          path: LocalDirectory
+      - uses: actions/checkout@v4
+        with:
+          repository: sccnexusdata/leweslive
+          path: leweslive
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install PostcodeLive
+        working-directory: postcodelive
+        run: pip install -e .
+      - name: Import governed upstream bundles
+        working-directory: postcodelive
+        run: python scripts/import_upstreams.py --events-root ../LocalEventsEngine --directory-root ../LocalDirectory --leweslive-root ../leweslive --output public_html/data
+      - name: Validate shared infrastructure
+        working-directory: postcodelive
+        run: python scripts/validate_infrastructure.py
+      - name: Commit changed locality bundles
+        working-directory: postcodelive
+        run: |
+          if git diff --quiet -- public_html/data; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public_html/data
+          git commit -m 'Sync governed Lewes locality bundle'
+          git push
