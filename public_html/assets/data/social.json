@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {"title":"What’s on in Lewes","theme":"Daily local","caption":"Lewes does not exactly do quiet. Film, music, workshops, food, exhibitions and local discoveries — gathered into one useful guide. Find it on the map, check what is coming up, and go somewhere interesting.","hashtags":["#Lewes","#LewesLive","#WhatsOnLewes","#VisitLewes","#EastSussex"],"platforms":["Instagram","Facebook"]},
+    {"title":"Your weekend, sorted","theme":"Weekend","caption":"Stop finding out on Monday what you could have done on Saturday. LewesLive brings local events, places and useful information together before the weekend disappears.","hashtags":["#LewesWeekend","#LewesLive","#SussexLife","#ThingsToDoLewes"],"platforms":["Instagram","Facebook"]},
+    {"title":"Map-first local discovery","theme":"Directory","caption":"The best local guide is not just a list. It is a map, a card, a route, a reason to visit, and a reminder that half the good stuff is hiding in plain sight.","hashtags":["#IndependentLewes","#LoveLewes","#LocalDirectory","#LewesLive"],"platforms":["Instagram","Facebook"]},
+    {"title":"Built for local businesses","theme":"Business","caption":"Independent places need better visibility than a buried search result and a tired Facebook post. PostcodeLive turns local listings into map cards, directory pages and social material.","hashtags":["#LocalBusiness","#SussexBusiness","#Lewes","#Brighton"],"platforms":["Facebook","LinkedIn"]},
+    {"title":"BrightonLive next","theme":"Expansion","caption":"The same engine can power bigger local guides: neighbourhoods, venues, events, food, travel and social output — one structured system instead of a pile of disconnected posts.","hashtags":["#BrightonLive","#Brighton","#Sussex","#LocalTech"],"platforms":["Instagram","LinkedIn"]},
+    {"title":"Live local by postcode","theme":"Platform","caption":"Lewes first. Brighton next. Then every postcode that deserves a better local guide. PostcodeLive is the shared engine underneath the local brands.","hashtags":["#PostcodeLive","#LewesLive","#BrightonLive","#SCCNexus"],"platforms":["Instagram","Facebook","LinkedIn"]}
+  ]
+}
