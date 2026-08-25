@@ -1,0 +1,7 @@
+{
+  "events": [
+    {"title":"Depot cinema picks","venue":"Depot Lewes","town":"Lewes","date":"2026-08-27","category":"Film","description":"A cleaner events card that says what is happening, where it is, and why it might be worth a look — without sounding scraped."},
+    {"title":"Live music night","venue":"Lewes Con Club","town":"Lewes","date":"2026-08-28","category":"Music","description":"Use this format for punchy local listings: short, useful and written for someone deciding what to do this week."},
+    {"title":"Creative workshop","venue":"The Sidings","town":"Lewes","date":"2026-08-30","category":"Workshop","description":"Workshop cards should explain the activity in normal language, not simply repeat a venue/title pairing."}
+  ]
+}
