@@ -1,0 +1,35 @@
+slug: lewes
+display_name: Lewes
+country: GB
+postcode_prefixes: [BN7]
+centre:
+  latitude: 50.8732
+  longitude: 0.0098
+radius_km: 16.0934
+timezone: Europe/London
+contracts:
+  coordinate_rules:
+    hard_collision_metres: 2
+    near_duplicate_metres: 8
+    informational_nearby_metres: 20
+  icon:
+    format: PNG
+    width: 320
+    height: 320
+    max_bytes: 51200
+    require_alpha_for_bespoke: true
+  card:
+    preferred_format: WEBP
+    max_bytes: 102400
+quality:
+  directory:
+    minimum_publish_safe: 250
+    minimum_geocoded_coverage: 0.65
+    minimum_multi_source_coverage: 0.20
+  events:
+    require_title: true
+    require_date: true
+upstreams:
+  events: sccnexusdata/LocalEventsEngine
+  directory: sccnexusdata/LocalDirectory
+  production_site: sccnexusdata/leweslive
