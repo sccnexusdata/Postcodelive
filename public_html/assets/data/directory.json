@@ -1,0 +1,9 @@
+{
+  "entries": [
+    {"name":"Lewes Castle","town":"Lewes","postcode":"BN7","category":"Heritage","icon":"castle","lat":50.8739,"lng":0.0088,"description":"A natural hero location for LewesLive and a strong visual anchor for visitor-facing social posts."},
+    {"name":"Depot Lewes","town":"Lewes","postcode":"BN7","category":"Cinema","icon":"film","lat":50.8706,"lng":0.0122,"description":"Cinema, food and cultural programming; ideal for weekly what’s-on highlights."},
+    {"name":"Lewes Station","town":"Lewes","postcode":"BN7","category":"Travel","icon":"train","lat":50.8704,"lng":0.0129,"description":"Travel cards make the site useful beyond events: rail, buses, taxis, parking and visitor movement."},
+    {"name":"Brighton Seafront","town":"Brighton","postcode":"BN1","category":"Visitor","icon":"waves","lat":50.8195,"lng":-0.1365,"description":"A future BrightonLive anchor location for visitor flows, walks and event discovery."},
+    {"name":"Newhaven Harbour","town":"Newhaven","postcode":"BN9","category":"Harbour","icon":"harbour","lat":50.7907,"lng":0.0545,"description":"A coastal node for ferry, harbour, taproom and walks content."}
+  ]
+}
