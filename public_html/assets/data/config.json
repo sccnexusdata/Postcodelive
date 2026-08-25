@@ -1,0 +1,30 @@
+{
+  "platform": "PostcodeLive",
+  "owner": "SCC Nexus",
+  "towns": [
+    {
+      "name": "LewesLive",
+      "postcodeArea": "BN7",
+      "aliases": ["Lewes", "BN7"],
+      "icon": "castle",
+      "status": "Lead town build",
+      "summary": "The map-first Lewes guide for events, independent places, local travel and useful visitor information."
+    },
+    {
+      "name": "BrightonLive",
+      "postcodeArea": "BN1 / BN2",
+      "aliases": ["Brighton", "BN1", "BN2"],
+      "icon": "waves",
+      "status": "Next town candidate",
+      "summary": "A larger city version for neighbourhood discovery, cultural listings, food, music and visitor movement."
+    },
+    {
+      "name": "NewhavenLive",
+      "postcodeArea": "BN9",
+      "aliases": ["Newhaven", "BN9"],
+      "icon": "harbour",
+      "status": "Future coastal node",
+      "summary": "A compact coastal guide model for ferry, harbour, taproom, walks, independent venues and live local updates."
+    }
+  ]
+}
