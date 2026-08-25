@@ -3,20 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PostcodeLive | Live local by postcode</title>
-  <meta name="description" content="Postcode-first local discovery for events, places, travel and social publishing.">
+  <title>PostcodeLive | Your postcode, live</title>
+  <meta name="description" content="Enter a UK postcode and discover the places, events and useful local information around it.">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <header class="site-header"><strong>PostcodeLive</strong><nav><a href="#towns">Towns</a><a href="#events">Events</a><a href="#directory">Directory</a><a href="#social">Social</a></nav></header>
+  <header class="site-header">
+    <strong>PostcodeLive</strong>
+    <nav><a href="#nearby">Nearby</a><a href="#events">What’s on</a><a href="#directory">Places</a><a href="#social">Discover</a></nav>
+  </header>
   <main>
-    <section class="hero"><p class="eyebrow">One engine. Many local sites.</p><h1>Live local, by postcode.</h1><p>PostcodeLive turns structured local data into useful town guides, event feeds, directory cards and upload-ready social content.</p><form id="postcode-form"><input id="postcode" placeholder="Try BN7, BN1 or BN9"><button>Find local</button></form></section>
-    <section id="towns"><h2>Town network</h2><div id="town-grid" class="grid"></div></section>
-    <section id="events"><h2>What’s on</h2><div id="events-list" class="grid"></div></section>
-    <section id="directory"><h2>Directory</h2><div class="filters"><input id="directory-search" placeholder="Search places"><select id="directory-category"><option value="all">All categories</option></select></div><div id="directory-grid" class="grid"></div></section>
-    <section id="social"><h2>Social output</h2><div id="social-grid" class="grid"></div></section>
+    <section class="hero" id="home">
+      <p class="eyebrow">Your postcode. Your local world.</p>
+      <h1>What’s happening around you?</h1>
+      <p class="hero-copy">Enter any UK postcode. PostcodeLive builds a local experience around that exact place — nearby events, independent businesses, useful places, travel and things worth discovering.</p>
+      <form id="postcode-form" novalidate>
+        <label class="sr-only" for="postcode">UK postcode</label>
+        <input id="postcode" name="postcode" autocomplete="postal-code" inputmode="text" placeholder="e.g. BN7 1XX" aria-describedby="postcode-help">
+        <button type="submit">Explore my postcode</button>
+      </form>
+      <p id="postcode-help" class="microcopy">No account. No generic town page. Start with where you actually are.</p>
+      <p id="postcode-status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="local-context" class="context-panel" hidden>
+      <div>
+        <p class="eyebrow">Your local area</p>
+        <h2 id="context-title">Around you</h2>
+        <p id="context-summary"></p>
+      </div>
+      <div id="context-facts" class="facts"></div>
+    </section>
+
+    <section id="nearby" hidden>
+      <p class="eyebrow">Closest first</p>
+      <h2>Nearby highlights</h2>
+      <div id="nearby-grid" class="grid"></div>
+    </section>
+
+    <section id="events">
+      <p class="eyebrow">What’s on</p>
+      <h2>Events around this postcode</h2>
+      <div id="events-list" class="grid"></div>
+    </section>
+
+    <section id="directory">
+      <p class="eyebrow">Explore</p>
+      <h2>Places worth knowing</h2>
+      <div class="filters"><input id="directory-search" placeholder="Search places"><select id="directory-category"><option value="all">All categories</option></select></div>
+      <div id="directory-grid" class="grid"></div>
+    </section>
+
+    <section id="social">
+      <p class="eyebrow">Local discovery</p>
+      <h2>Worth a look</h2>
+      <div id="social-grid" class="grid"></div>
+    </section>
   </main>
-  <footer>PostcodeLive · SCC Nexus</footer>
+  <footer>PostcodeLive · Local discovery built from governed local data · SCC Nexus</footer>
   <script src="assets/js/app.js" defer></script>
 </body>
 </html>
